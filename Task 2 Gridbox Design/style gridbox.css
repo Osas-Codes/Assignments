@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(24, 22, 22, 0.801);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 50%; */
+}
+
+.grid-container {
+  width: 55%;
+  height: 80vh;
+  display: grid;
+  grid-gap: 0.625rem;
+  grid-template-columns: 43.5% 14.5% 36%;
+  grid-template-rows: 43% 22.7% 28.4%;
+  grid-template-areas: "el1 el1 el2" 
+                       "el3 el4 el4"
+                       "el3 el5 el5";
+  justify-items: stretch;
+  align-items: stretch;
+  
+}
+
+
+.el1 {
+  background-color: tomato;
+  grid-area: el1;
+}
+
+.el2 {
+  background-color: gold;
+  grid-area: el2;
+}
+
+.el3 {
+  background-color: limegreen;
+  grid-area: el3;
+}
+
+.el4 {
+  background-color: deepskyblue;
+  grid-area: el4;
+}
+
+.el5 {
+  background-color: deepskyblue;
+  grid-area: el5;
+}
+
+
+
+
+@media screen and (max-width: 75rem) {
+  
+  body {
+    background-color: rgba(24, 22, 22, 0.801);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 50%; */
+  }
+  
+  .grid-container {
+    width: 70%;
+    height: 80vh;
+    display: grid;
+    grid-gap: 0.625rem;
+    grid-template-columns: 43.5% 14.5% 36%;
+    grid-template-rows: 43% 22.7% 28.4%;
+    grid-template-areas: "el1 el1 el2" 
+                         "el3 el4 el4"
+                         "el3 el5 el5";
+    justify-items: stretch;
+    align-items: stretch;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 55rem) {
+  
+  body {
+    background-color: rgba(24, 22, 22, 0.801);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 50%; */
+  }
+  
+  .grid-container {
+    width: 95%;
+    height: 80vh;
+    display: grid;
+    grid-gap: 0.625rem;
+    grid-template-columns: 43.5% 14.5% 36%;
+    grid-template-rows: 43% 22.7% 28.4%;
+    grid-template-areas: "el1 el1 el2" 
+                         "el3 el4 el4"
+                         "el3 el5 el5";
+    justify-items: stretch;
+    align-items: stretch;
+    
+  }
+}

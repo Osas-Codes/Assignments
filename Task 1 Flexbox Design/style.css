@@ -1,0 +1,493 @@
+/* https://replit.com/@EddieOsas/Wk-4-Zuri-Task-Flexbox-and-Gridbox-Design-Layouts?v=1 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("LexendDeca-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("BigShouldersDisplay-Bold.ttf") format("truetype");
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px; 
+  margin: 0;
+  width: 1440px;
+  height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.flexcard-container {
+    height: 70vh;
+    width: 63%;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+    flex-shrink: 2;
+}
+
+.sedans-flex,
+.suv-flex,
+.luxury-flex {
+  width: 33.33%;
+  height: 100%;
+  padding: 2.8rem;
+  color:  hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 33%.33;
+  flex-shrink: 2;
+}
+
+.sedans-flex {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.suv-flex {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-flex {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+} 
+
+
+.texts {
+  /* margin-top: 1.8rem; */
+  font-family: Lexend Deca;
+}
+
+.heading{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+.texts .sedan-paragraph,
+.texts .suv-paragraph,
+.texts .luxury-paragraph {
+  margin-top: 1.2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+
+.queries-p {
+  display: none;
+}
+
+
+button {
+  margin-top: 3.8rem;
+  margin-bottom: 0;
+  padding: 1rem 2.2rem;
+  border-style: none;
+  border-radius: 2rem;;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 700;
+  background-color: hsl(0, 0%, 95%);;
+}
+
+button:hover,
+button:focus,
+button:active {
+  cursor: pointer;
+}
+
+.sedan-active {
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-active {
+  text-decoration: none;
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-active {
+  text-decoration: none;
+  color: hsl(179, 100%, 13%);
+}
+
+.sedan-active:hover, 
+.sedan-active:active,
+.sedan-active:focus {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border-style: ridge;
+  border-color: hsl(0, 0%, 95%);
+}
+
+.suv-active:hover, 
+.suv-active:active,
+.suv-active:focus {
+  background-color:  hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border-style:ridge;
+  border-color: hsl(0, 0%, 95%);
+}
+
+.luxury-active:hover, 
+.luxury-active:active,
+.luxury-active:focus {
+  background-color:  hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-style:ridge;
+  border-color: hsl(0, 0%, 95%);
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#grid-design {
+  display: flexbox;
+  text-align: center;
+}
+
+#grid-design  a {
+  padding: 1rem;
+  background-color: hsl(31, 77%, 52%);
+  border: hsl(31, 77%, 52%);
+  border-radius: 6px;
+  text-align: center;
+  color: hsl(179, 100%, 13%);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 45rem) {
+
+  body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px; 
+    margin: 0;
+    width: 45rem;
+    height: 100rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 90%; 
+    height: 80%;
+  }
+ 
+
+  .flexcard-container {
+    height: 100%;
+    width: 20%;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 23.4375rem;
+    flex-shrink: 2;
+  }
+
+  .sedans-flex,
+  .suv-flex,
+  .luxury-flex {
+  /* width: 33.33%; */
+  width: 100%;
+  height: 33.33%;
+  padding: 3rem;
+  color:  hsl(0, 0%, 95%);
+  border-radius:  0.3rem;
+  min-width: 23rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33.33%;
+  flex-shrink: 2;
+  flex-direction: row;
+}
+
+.texts {
+  /* margin-top: 1.5rem; */
+  font-family: Lexend Deca;
+}
+
+.heading{
+  font-family: 'Big Shoulders Display', cursive;
+  /* font-weight: 700; */
+  color: hsl(0, 0%, 95%);
+}
+
+br {
+  display: none;
+}
+
+.queries-p {
+  display:block ;
+  margin: 0;
+}
+
+.texts .sedan-paragraph,
+.texts .suv-paragraph,
+.texts .luxury-paragraph {
+  margin-top: 1.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+
+
+button {
+  margin-top: 3.6rem;
+  margin-bottom: 0%;
+  padding: 1rem 2.2rem;
+  border-style: none;
+  border-radius: 2rem;;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 700;
+  background-color: hsl(0, 0%, 95%);;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 23.4375rem) {
+
+  body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px; 
+    margin: 0;
+    width: 23.4375rem;
+    height: 100rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 90%; 
+    height: 80%;
+  }
+ 
+
+  .flexcard-container {
+    height: 100%;
+    width: 85%;
+    min-width: 20rem;
+    display: block;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 23.4375rem;
+    flex-shrink: 2; */
+  }
+
+  .sedans-flex,
+  .suv-flex,
+  .luxury-flex {
+  /* width: 33.33%; */
+  width: 100%;
+  height: 33.33%;
+  padding: 3rem;
+  color:  hsl(0, 0%, 95%);
+  border-radius:  0.3rem;
+  min-width: 23rem;
+  display: block;
+  /* flex-wrap: wrap;
+  flex-basis: 33.33%;
+  flex-shrink: 2;
+  flex-direction: row; */
+}
+
+.texts {
+  /* margin-top: 1.5rem; */
+  font-family: Lexend Deca;
+}
+
+.heading{
+  font-family: 'Big Shoulders Display', cursive;
+  /* font-weight: 700; */
+  color: hsl(0, 0%, 95%);
+}
+
+br {
+  display: none;
+}
+
+.queries-p {
+  display:block ;
+  margin: 0;
+}
+
+.texts .sedan-paragraph,
+.texts .suv-paragraph,
+.texts .luxury-paragraph {
+  margin-top: 1.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+
+
+button {
+  margin-top: 3.6rem;
+  margin-bottom: 0%;
+  padding: 1rem 2.2rem;
+  border-style: none;
+  border-radius: 2rem;;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 700;
+  background-color: hsl(0, 0%, 95%);;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 23.4375rem) {
+  .flexcard-container {
+    height: 75vh;
+    /* width: 100%; */
+    /*width: 23.4375rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.sedans-flex,
+.suv-flex,
+.luxury-flex {
+  width: 33.33%;
+  padding: 3rem;
+  color:  hsl(0, 0%, 95%);
+  min-width: 23rem;
+  max-width: 23.4375rem;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-direction: column; 
+}*/
+
+/*.sedan-active,
+.suv-active,
+.luxury-active {
+  margin-top: 5rem;
+  margin-bottom: 0%;
+  padding: 1rem;
+  border-style: none;
+  border-radius: 2rem;;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 700;
+  background-color: hsl(0, 0%, 95%);;
+}
+
+} */
+
