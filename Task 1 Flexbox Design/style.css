@@ -193,8 +193,6 @@ footer {
 }
 
 
-
-
 @media screen and (max-width: 45rem) {
 
   body {
@@ -310,9 +308,6 @@ footer {
 }
 
 
-
-
-
 @media screen and (max-width: 23.4375rem) {
 
   body {
@@ -402,7 +397,6 @@ br {
   font-weight: 400;
 }
 
-
 button {
   margin-top: 3.6rem;
   margin-bottom: 0%;
@@ -426,68 +420,3 @@ footer {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 23.4375rem) {
-  .flexcard-container {
-    height: 75vh;
-    /* width: 100%; */
-    /*width: 23.4375rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.sedans-flex,
-.suv-flex,
-.luxury-flex {
-  width: 33.33%;
-  padding: 3rem;
-  color:  hsl(0, 0%, 95%);
-  min-width: 23rem;
-  max-width: 23.4375rem;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-basis: auto;
-  flex-direction: column; 
-}*/
-
-/*.sedan-active,
-.suv-active,
-.luxury-active {
-  margin-top: 5rem;
-  margin-bottom: 0%;
-  padding: 1rem;
-  border-style: none;
-  border-radius: 2rem;;
-  font-family: 'Lexend Deca', sans-serif;
-  font-size: 700;
-  background-color: hsl(0, 0%, 95%);;
-}
-
-} */
-
