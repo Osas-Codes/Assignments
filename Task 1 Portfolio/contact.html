@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio Contact </title>
+  <link rel="stylesheet" href="style contact.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__brand">
+      <a href="#"> EO </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="#"> Home </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#"> About </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#"> Projects </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#"> Contact </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#"> Services </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <div class="contact">
+        <div>
+          <h1 class="heading"> CONTACT </h1>
+        </div>
+        <ul class="contact-info">
+          <li> Call: <p>08069712910</p> </li>
+          <li> Email: <p>osascodes@gmail.com</p> </li>
+        </ul>
+      
+        <div class="get-in-touch">
+          <h2> OR </h2>
+          <h4> Feel free and fill all the required fields to contact me. I will reply as soon as possible </h4>
+          <form action="forms/contact.php" method="post" role="form" id="contact-form">
+            
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="text-center"><button type="submit" class="submit-button">Send Message</button></div>
+          </form>
+    
+        </div>
+    </div>
+
+  </main>
+  <footer class="main-footer">
+    <nav>
+        <ul class="main-footer__links">
+            <li class="main-footer__link">
+                <a href="#">Contact Support</a>
+            </li>
+            <li class="main-footer__link">
+                <a href="#">Terms of Use</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+  </body>
+  </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__brand">
+      <a href="#"> EO </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="#"> Home </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#about-me"> About </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#services"> Services </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#projects"> Projects </a>
+        </li>  
+        <li class="main-nav__item">
+          <a href="#contact"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about-me">
+      <div class="about-me">
+        <div class="image-container">
+          <img src="1_copy.jpg" alt="My Picture" class="my-image">
+        </div>
+        <div class="about-me__texts">
+          <h2 class="Intro"> Hi, I'm Endurance Osamwonyi</h2>
+          <p> I am web developer who is passionate about programming and solving complex algorithm into simple solutions and i turn designs ideas into high quality websites and applications to help business grow faster using modern web technologies. I love learning and playing football. I am a passionate problem solver. </p>
+        </div>  
+      </div>  
+    </section>
+
+    <section id="services"> 
+      <h1 class="heading"> SERVICES </h1>
+      <div class="services-item__list">
+        <div class="services-item">
+          <h3> Web Development </h3>
+          <p> Implementation of any psd or figma design into live website or app with cross browser and platform compatibility. </p>
+        </div>
+        <div class="services-item">
+          <h3> Responsive Design </h3>
+          <p> Design that aims to make webpages dynamic and render well on different devices mobile, tablet and personal computer. </p>
+        </div>
+        <div class="services-item">
+          <h3> Template Editing </h3>
+          <p> Editing and optimizing an already created website or web application to match client corporate identity. </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="heading"> SKILLS </h1>
+      <div class="skills">
+        <ul class="skills-list">
+          <li> HTML </li>
+          <li> CSS </li>
+          <li> JavaScript </li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="heading"> PROJECTS </h1>
+      <div class="projects">
+        <div class="project"><a href="https://nft-preview-card-component-main-6b13f6.netlify.app" target="_blank"> NFT Preview Card Component - main </a></div>
+        <div class="project"><a href="https://codepen.io/EddieOsas/pen/qBYKppm" target="_blank"> Tribute to  Nelson Mandela  </a></div>
+      </div>
+    </section>
+    <section id="contact-me">
+      <div class="contact">
+        <div>
+          <h1 class="heading"><a href="contact.html" target="_blank" class="contact-link"> CONTACT </a></h1>
+        </div>
+        <ul class="contact-info">
+          <li> Call: <p>08069712910</p> </li>
+          <li> Email: <p>osascodes@gmail.com</p> </li>
+        </ul>
+        <div class="get-in-touch">
+          <h2> OR </h2>
+          <h4> Feel free and fill all the required fields to contact me. I will reply as soon as possible </h4>
+          <form action="forms/contact.php" method="post" role="form" id="contact-form">
+            
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" id="message-area" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="text-center"><button type="submit" class="submit-button">Send Message</button></div>
+          </form>
+    
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <nav>
+        <ul class="main-footer__links">
+            <li class="main-footer__link">
+                <a href="#">Contact Support</a>
+            </li>
+            <li class="main-footer__link">
+                <a href="#">Terms of Use</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+  </body>
+  </html>
